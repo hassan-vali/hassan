@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+
+</head>
+<body>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form id="contactForm" method="post" action="contact.php">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="tel" id="phone" placeholder="Your Phone" required>
+            
+            <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="status" style="color: green; margin-top: 10px;"></p>
+        <p class="toggle-dark-mode" onclick="toggleDarkMode()">Toggle Dark Mode</p>
+    </div>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let phone = document.getElementById('phone').value;
+            
+            let message = document.getElementById('message').value;
+            if(name && email && phone &&  message) {
+                document.getElementById('status').innerText = 'Message Sent Successfully!';
+                this.reset();
+            } else {
+                document.getElementById('status').innerText = 'Please fill all fields!';
+            }
+        });
+    </script>
+</body>
+</html>

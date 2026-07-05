@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hassan's profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        if (!sessionStorage.getItem("alertShown")) {
+    alert("WELL COME TO HASSAN's PORTFOLIO!");
+    sessionStorage.setItem("alertShown", "true");
+ }
+
+    </script>
+  
+ </head>
+ <body>
+
+    <nav>
+        <div class="nav__content">
+            <div class="logo"><a href="#">Hassan</a></div>
+            <label for="check" class="checkbox">
+                <i class="ri-menu-line"></i>
+             </label>
+             <input type="checkbox" name="check" id="check">
+             <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+             </ul>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="section__container">
+            <div class="content">
+            <p class="subtitle">HELLO</p>
+            <h1 class="title">
+                I'm<span> Hassan<br>a</span> Fullstack Developer
+            </h1>
+            <p class="description">
+                Hi! I’m Hassan, a passionate B.Tech 2nd-year student specializing in Computer Science. 
+                I am enthusiastic about solving real-world problems through innovative solutions, coding, and collaborative projects.
+                My goal is to contribute to cutting-edge technologies and grow as a software developer.
+            </p>
+            <div class="action__btns">
+                <a href="https://www.instagram.com/s.hassannnn/"><button class="hire__me">Hire Me</button></a>
+                <button class="portfolio">Portfolio</button>
+            </div>
+        </div>
+        <div class="image">
+        <img src="mee.png" alt="profile" height=""/>
+        </div>
+    
+           
+    </div>
+    </section>
+    <style>
+        .heading{
+            text-align: center;
+            font-size: 70px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .container{
+           
+            display: flex;
+        }
+        .services{
+            font-size: 20px;
+            margin: 30px;
+            border-radius: 20px;
+            text-align: center;
+            flex-grow: 2;
+           
+
+            
+        }
+        .black-text {
+            color: black;
+            font-weight: bold;
+        }
+        .blue-text {
+            color:  #b46cee;
+            font-weight: bold;
+        }
+
+    </style>
+ 
+     <h1 class="heading"><span class="black-text">Our</span> <span class="blue-text">Services</span></h1>
+    <br>
+    <br>
+    
+
+       
+</body>
+</html>
