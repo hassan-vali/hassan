@@ -1,0 +1,25 @@
+{
+  "name": "protofoilo1",
+  "version": "1.0.0",
+  "description": "first git\r <br>\r Author - Hassan",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hassan-vali/hassan.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hassan-vali/hassan/issues"
+  },
+  "homepage": "https://github.com/hassan-vali/hassan#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "mysql2": "^3.22.6"
+  }
+}
